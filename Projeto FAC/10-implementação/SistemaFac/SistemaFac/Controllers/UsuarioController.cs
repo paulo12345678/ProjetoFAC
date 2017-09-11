@@ -5,6 +5,7 @@ using System.Web;
 using Model.Models;
 using Negocio.Business;
 using System.Web.Mvc;
+using SistemaFac.Util;
 
 namespace BibliotecaWeb.Controllers
 {
@@ -46,6 +47,8 @@ namespace BibliotecaWeb.Controllers
                 if (ModelState.IsValid)
                 {
                     gerenciador.Adicionar(usuario);
+                    
+                    SessionHelper.Set(SessionKeys.USUARIO, usuario);
                     return RedirectToAction("Index");
                 }
             }
