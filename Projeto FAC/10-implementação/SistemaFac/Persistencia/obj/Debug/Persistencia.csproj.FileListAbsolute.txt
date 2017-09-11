@@ -12,3 +12,10 @@ C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\bin\De
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\obj\Debug\Persistencia.dll
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\Model.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\Model.pdb
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\obj\Debug\Persistencia.pdb

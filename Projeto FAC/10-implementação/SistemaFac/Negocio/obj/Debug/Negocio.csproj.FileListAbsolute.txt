@@ -16,3 +16,12 @@ C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\P
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.dll
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Negocio.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Model.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Persistencia.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Model.pdb
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Persistencia.pdb
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.pdb
