@@ -1,0 +1,18 @@
+C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Negocio.dll
+C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Model.dll
+C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Persistencia.dll
+C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Model.pdb
+C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Persistencia.pdb
+C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.dll
+C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Negocio.dll
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Model.dll
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Persistencia.dll
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Model.pdb
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Persistencia.pdb
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.dll
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.pdb
