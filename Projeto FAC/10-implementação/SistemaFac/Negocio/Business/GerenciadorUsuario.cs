@@ -24,21 +24,32 @@ namespace Negocio.Business
         public void Editar(Usuario usuario)
         {
             persistencia.editar(usuario);
-            /*try
-           {
-                persistencia.editar(usuario);
-            }
-            catch (Exception negicio)
-            {
-
-            }*/
+            
         }
 
         public void Remover(Usuario usuario)
         {
             persistencia.remover(usuario);
         }
+        public Usuario ObterByLoginSenha(string login, string senha)
+        {
+            return persistencia.Obter(e => e.Email.ToLowerInvariant().Equals(login.ToLowerInvariant()) &&
+                e.Senha.ToLowerInvariant().Equals(senha.ToLowerInvariant()));
+        }
 
+        public bool BuscarPreCadastro(int? id, string email)
+        {
+            if (persistencia.Obter(e => e.Email.ToLowerInvariant().Equals(email.ToLowerInvariant()) &&
+                 e.Id == id) != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
         public Usuario Obter(int? id)
         {
             return persistencia.Obter(u => u.Id == id);

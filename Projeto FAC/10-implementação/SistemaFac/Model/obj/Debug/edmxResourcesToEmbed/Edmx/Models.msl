@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BibliotecaModelStoreContainer" CdmEntityContainer="BibliotecaEntities">
+    <EntitySetMapping Name="tb_editora">
+      <EntityTypeMapping TypeName="BibliotecaModel.tb_editora">
+        <MappingFragment StoreEntitySet="tb_editora">
+          <ScalarProperty Name="id_Editora" ColumnName="id_Editora" />
+          <ScalarProperty Name="NM_Editoria" ColumnName="NM_Editoria" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -238,3 +238,7 @@ C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Sis
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\SistemaFac\obj\Debug\SistemaFac.csprojResolveAssemblyReference.cache
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\SistemaFac\obj\Debug\SistemaFac.dll
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\SistemaFac\obj\Debug\SistemaFac.pdb
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\SistemaFac\obj\Debug\SistemaFac.csprojResolveAssemblyReference.cache
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\SistemaFac\obj\Debug\SistemaFac.csproj.CoreCompileInputs.cache
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\SistemaFac\obj\Debug\SistemaFac.dll
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\SistemaFac\obj\Debug\SistemaFac.pdb

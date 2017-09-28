@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Model.Models.Exceptions
 {
-    public class NegocioException : Exception
+    class NegocioException : SistemaFacExceptions
     {
-        public NegocioException(string message) : base(message)
-        {
-        }
+        public NegocioException(string mensagem, Exception excecao) : base(mensagem, excecao) { }
+        public NegocioException(string mensagem) : base(mensagem) { }
     }
 }

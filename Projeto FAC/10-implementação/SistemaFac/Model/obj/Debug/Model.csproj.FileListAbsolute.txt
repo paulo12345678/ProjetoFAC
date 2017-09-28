@@ -7,8 +7,22 @@ C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Model\bin\Debug\Mod
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Model\bin\Debug\Model.pdb
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Model\obj\Debug\Model.dll
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Model\obj\Debug\Model.pdb
+<<<<<<< remotes/origin/Codigo
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\Model.dll
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\Model.pdb
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.dll
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.pdb
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+=======
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\Model.dll.config
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\Model.dll
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\Model.pdb
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\EntityFramework.dll
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\EntityFramework.xml
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.dll
+C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.pdb
+>>>>>>> local
