@@ -1,20 +1,15 @@
 ﻿@using SistemaFac.Util;
 @using Model.Models;
 
-<!DOCTYPE html>
-<html>
-<head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <stile>
-        
-    </stile>
-</head>
-<body>
+   
+
   <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -27,16 +22,17 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Início", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Sobre", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
-                    @{ 
-                        Usuario uso = (Usuario) SessionHelper.Get(SessionKeys.USUARIO);//sessao
-                        
-                    }
                     <li>@Html.ActionLink("Aniversario", "Index", "Servico")</li>
                     <li>@Html.ActionLink("Casamento", "Index", "Servico")</li>
                     <li>@Html.ActionLink("Formatura", "Index", "Servico")</li>
+                   <!-- <li>@Html.ActionLink("Início", "Index", "Home")</li>-->
+                    <li>@Html.ActionLink("Sobre", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
+                   <!-- @{ 
+                        Usuario uso = (Usuario) SessionHelper.Get(SessionKeys.USUARIO);//sessao
+                        
+                    }-->
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="http://localhost:50542/Usuario/Create"><span class="glyphicon glyphicon-user"></span> Inscrever-se</a></li>
@@ -56,5 +52,4 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-</body>
-</html>
+

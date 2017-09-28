@@ -1,28 +1,17 @@
 ﻿@model Model.Models.Servico
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Criando Tipo de Servico";
 }
 
-<h2>Cadastro de Serviço</h2>
+<h2>Tipo de Servico</h2>
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-
-    <head>
-        <style>
-
-            body{
-                background-color: blueviolet;
-                color: white;
-            }
-           
-        </style>
-    </head>
-    <body>
+    
     <div class="form-horizontal">
-        <h4>Servico</h4>
+        <h4>Criando un Tipo de Servico</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -39,11 +28,8 @@
             </div>
         </div>
     </div>
-        </body>
 }
 
 <div>
-    <button>
     @Html.ActionLink("Voltar", "Index")
-    </button>
 </div>
