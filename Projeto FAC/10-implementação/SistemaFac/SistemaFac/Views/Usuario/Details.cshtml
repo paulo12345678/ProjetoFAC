@@ -1,13 +1,13 @@
 ﻿@model Model.Models.Usuario
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalhe";
 }
 
-<h2>Details</h2>
+<h2>Detalhe</h2>
 
 <div>
-    <h4>Usuario</h4>
+    <h4>Detalhe de Usuario</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -118,13 +118,14 @@
             @Html.DisplayNameFor(model => model.QuantConvidadosConf)
         </dt>
 
-        <dd>
+      <!--  <dd>
             @Html.DisplayFor(model => model.QuantConvidadosConf)
-        </dd>
+        </dd>-->
 
     </dl>
 </div>
+<br>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Voltar", "Index")
 </p>

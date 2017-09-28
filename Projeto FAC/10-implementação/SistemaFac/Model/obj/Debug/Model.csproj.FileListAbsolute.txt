@@ -12,6 +12,7 @@ C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Mod
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\Model.pdb
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.dll
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.pdb
+<<<<<<< HEAD
 C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 =======
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\bin\Debug\Model.dll.config
@@ -26,3 +27,5 @@ C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Mode
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.dll
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Model\obj\Debug\Model.pdb
 >>>>>>> local
+=======
+>>>>>>> e1770d69b399170b81c41fa55714c54266977375
