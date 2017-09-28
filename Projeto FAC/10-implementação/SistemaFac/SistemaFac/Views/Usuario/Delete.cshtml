@@ -1,14 +1,14 @@
 ﻿@model Model.Models.Usuario
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Deletar";
 }
 
-<h2>Delete</h2>
+<h2>Deletar Usuario</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Tem certesa que deseja deletar este usuario?</h3>
 <div>
-    <h4>Usuario</h4>
+    <h4>Deletar</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -119,9 +119,9 @@
             @Html.DisplayNameFor(model => model.QuantConvidadosConf)
         </dt>
 
-        <dd>
+      <!--  <dd>
             @Html.DisplayFor(model => model.QuantConvidadosConf)
-        </dd>
+        </dd>-->
 
     </dl>
 
@@ -129,8 +129,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            <input type="submit" value="Deletar" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
         </div>
     }
 </div>

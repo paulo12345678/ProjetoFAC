@@ -1,47 +1,35 @@
 ﻿@model Model.Models.TipoEvento
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Criar Tipos de Eventos ";
 }
 
-<h2>Cadastro de Evento</h2>
+<h2>Cadastro de Tipos de Eventos</h2>
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-
-    <head>
-        <style>
-            body {
-                background-color: blueviolet;
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="form-horizontal">
-            <h4>TipoEvento</h4>
-            <hr />
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <div class="form-group">
-                @Html.LabelFor(model => model.Descricao, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Descricao, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Descricao, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Criar" class="btn btn-default" />
-                </div>
+    
+    <div class="form-horizontal">
+        <h4>Cadastre um Tipo de Evento:</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Descricao, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Descricao, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Descricao, "", new { @class = "text-danger" })
             </div>
         </div>
-    </body>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Criar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
 }
 
 <div>
-    <button>
-        @Html.ActionLink("Voltar", "Index")
-    </button>
+    @Html.ActionLink("Voltar", "Index")
 </div>
