@@ -36,3 +36,9 @@ C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Pers
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\obj\Debug\Persistencia.dll
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\obj\Debug\Persistencia.pdb
 >>>>>>> local
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\Persistencia.dll.config
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\EntityFramework.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\Model.dll.config
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\EntityFramework.xml
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Persistencia\bin\Debug\EntityFramework.SqlServer.xml

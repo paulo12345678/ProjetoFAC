@@ -42,3 +42,7 @@ C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Nego
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.dll
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.pdb
 >>>>>>> local
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Model.dll.config
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Persistencia.dll.config
+C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\EntityFramework.xml
