@@ -156,12 +156,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< remotes/origin/Codigo
-=======
+
     <Compile Include="Util\AuthenticatedAttribute.cs" />
     <Compile Include="Util\Criptografia.cs" />
     <Compile Include="Util\CustomAuthorizeAttribute.cs" />
->>>>>>> local
+
     <Compile Include="Util\SessionHelper.cs" />
   </ItemGroup>
   <ItemGroup>
