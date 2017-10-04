@@ -6,13 +6,8 @@ using System.Web.Mvc;
 using Model.Models.Account;
 using Model.Models;
 using Negocio.Business;
-<<<<<<< remotes/origin/Codigo
-using System.Web.Mvc;
-using SistemaFac.Util;
-=======
 using SistemaFac.Util;
 using System.Web.Security;
->>>>>>> local
 
 namespace SistemaFac.Controllers
 {
@@ -38,15 +33,10 @@ namespace SistemaFac.Controllers
             {
                 if (ModelState.IsValid)
                 {
-<<<<<<< remotes/origin/Codigo
-                    gerenciador.Adicionar(usuario);
                     
-                    SessionHelper.Set(SessionKeys.USUARIO, usuario);
-                    return RedirectToAction("Index");
-=======
                     // Obtendo o usuário.
                    // dadosLogin.Senha = Criptografia.GerarHashSenha(dadosLogin.Login + dadosLogin.Senha);
-                    Usuario usuario = gerenciador.ObterByLoginSenha(dadosLogin.Login, dadosLogin.Senha);
+                     Usuario usuario = gerenciador.ObterByLoginSenha(dadosLogin.Login, dadosLogin.Senha);
 
                     // Autenticando.
                     if (usuario != null)
@@ -63,7 +53,6 @@ namespace SistemaFac.Controllers
                         else
                             return RedirectToAction(" Index ", " Administrador ");
                     }
->>>>>>> local
                 }
                 ModelState.AddModelError("", "Usuário e/ou senha inválidos.");
             }

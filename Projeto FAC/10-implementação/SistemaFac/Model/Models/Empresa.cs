@@ -28,6 +28,10 @@ namespace Model.Models
         private List<Feedback> receberFeedback;
         private List<ListaPresentes> receberListaPresentes;
 
+        public Empresa()
+        {
+        }
+
         public Empresa(int id, string razaoSocial , string rua, string bairro , string cidade, string login,string senha)
         {
             this.id = id;
