@@ -13,6 +13,7 @@ namespace Model.Models
         private int id;
         private string descricao;
         private List<Servico> servicosAssociados;
+        public string Nome { get; set; }
 
         public TipoEvento(int id,string descricao, List<Servico> servicosAssociados)
         {

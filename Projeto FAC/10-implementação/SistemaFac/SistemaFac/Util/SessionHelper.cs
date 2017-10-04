@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SistemaFac.Util
 {
-    public enum SessionKeys { USUARIO }
+    public enum SessionKeys { USUARIO , CARRINHO}
 
     public static class SessionHelper
     {

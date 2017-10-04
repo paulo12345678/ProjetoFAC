@@ -1,32 +1,3 @@
-C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Negocio.dll
-C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Negocio.pdb
-C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Model.dll
-C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Persistencia.dll
-C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Model.pdb
-C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Persistencia.pdb
-C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
-C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.dll
-C:\Users\Paulo\Documents\Engenharia II\EMESON  E PAULO VITOR- PROJETO FAC\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.pdb
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Negocio.dll
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Negocio.pdb
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Model.dll
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Persistencia.dll
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Model.pdb
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\bin\Debug\Persistencia.pdb
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.dll
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Negocio\obj\Debug\Negocio.pdb
-<<<<<<< remotes/origin/Codigo
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Negocio.dll
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Negocio.pdb
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Model.dll
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Persistencia.dll
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Model.pdb
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Persistencia.pdb
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.dll
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.pdb
-=======
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Negocio.dll
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Negocio.pdb
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Model.dll
@@ -41,8 +12,3 @@ C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Nego
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.dll
 C:\Users\Paulo\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\obj\Debug\Negocio.pdb
->>>>>>> local
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\EntityFramework.dll
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Model.dll.config
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\Persistencia.dll.config
-C:\Users\Emeson\Desktop\ProjetoFAC\Projeto FAC\10-implementação\SistemaFac\Negocio\bin\Debug\EntityFramework.xml

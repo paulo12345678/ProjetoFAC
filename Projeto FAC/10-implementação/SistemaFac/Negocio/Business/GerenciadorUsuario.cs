@@ -33,7 +33,7 @@ namespace Negocio.Business
         }
         public Usuario ObterByLoginSenha(string login, string senha)
         {
-            return persistencia.Obter(e => e.Email.ToLowerInvariant().Equals(login.ToLowerInvariant()) &&
+            return persistencia.Obter(e => e.Login.ToLowerInvariant().Equals(login.ToLowerInvariant()) &&
                 e.Senha.ToLowerInvariant().Equals(senha.ToLowerInvariant()));
         }
 

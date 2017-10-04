@@ -2,6 +2,8 @@
 using Model.Models;
 using Negocio.Business;
 using System.Collections.Generic;
+using SistemaFac.Util;
+using System.Security;
 
 
 namespace SistemasFAC.Controllers
@@ -11,13 +13,18 @@ namespace SistemasFAC.Controllers
 
         private GerenciadorTipoEventos gerenciador;
         private TipoEvento servico;
-
+        private GerenciadorServico gerenciadorS;
+        public List<Servico> Listservico;
+   
         public TipoEventoController()
         {
+            gerenciadorS = new GerenciadorServico();
             servico = new TipoEvento() { Id = 1 };
             gerenciador = new GerenciadorTipoEventos();
         }
 
+        [Authenticated]
+        [CustomAuthorize(NivelAcesso =TipoUsuario.USUARIO,Controladora ="Usuario",MetodoAcao ="Login")]
         public ActionResult Index()
         {
             return View(gerenciador.ObterTodos());
@@ -25,7 +32,8 @@ namespace SistemasFAC.Controllers
 
         public ActionResult Create()
         {
-            ViewBag.ListaDescricao = new SelectList(gerenciador.ObterTodos(), "Descricao");
+            
+            ViewBag.ListaDescricao = new SelectList(gerenciadorS.ObterTodos(), "Id","nome");
             return View();
         }
         public ActionResult Details(int? id)

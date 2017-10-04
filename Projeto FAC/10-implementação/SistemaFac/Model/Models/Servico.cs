@@ -13,6 +13,7 @@ namespace Model.Models
 
         private int id;
         private string descricao;
+        private string nome { get; set; }
 
         public Servico(int id, string descricao)
         {

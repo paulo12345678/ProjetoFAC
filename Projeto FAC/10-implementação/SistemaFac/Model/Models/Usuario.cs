@@ -8,13 +8,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Model.Models
 {
-      public enum TipoUsuario { USUARIO,ADMINISTRADOR,EMPRESA}
     
     public class Usuario
     {
         #region atributos
 
-        private  int tipoUsuario;
+        public  int NvAcesso { get; set; }
         private int id;
         private string nome;
         private string rua;
@@ -45,7 +44,6 @@ namespace Model.Models
             this.email = email;
             this.login = login;
             this.senha = senha;
-            this.tipoUsuario=Tipo;
         }
 
         public Usuario()
@@ -207,12 +205,7 @@ namespace Model.Models
             set { enviarlistapresentes = value; }
         }
 
-        [Display(Name = "Nivel de Usuário")]
-        public int TipoUsuario
-        {
-            get { return tipoUsuario; }
-            set { tipoUsuario = value; }
-        }
+
         #endregion
     }
 }
