@@ -1,30 +1,24 @@
-﻿using System.Web.Mvc;
+﻿
+using System.Web.Mvc;
 using Model.Models;
 using Negocio.Business;
 using System.Collections.Generic;
-using SistemaFac.Util;
-using System.Security;
 
 
 namespace SistemasFAC.Controllers
 {
-    public class TipoEventoController : Controller
+    public class EmpresaController : Controller
     {
 
-        private GerenciadorTipoEventos gerenciador;
-        private TipoEvento servico;
-        private GerenciadorServico gerenciadorS;
-        public List<Servico> Listservico;
-   
-        public TipoEventoController()
+        private GerenciadorEmpresa gerenciador;
+        private Empresa empresa;
+
+        public EmpresaController()
         {
-            gerenciadorS = new GerenciadorServico();
-            servico = new TipoEvento() { Id = 1 };
-            gerenciador = new GerenciadorTipoEventos();
+            empresa = new Empresa() { Id = 1 };
+            gerenciador = new GerenciadorEmpresa();
         }
 
-        [Authenticated]
-        [CustomAuthorize(NivelAcesso =TipoUsuario.USUARIO,Controladora ="Usuario",MetodoAcao ="Login")]
         public ActionResult Index()
         {
             return View(gerenciador.ObterTodos());
@@ -32,28 +26,27 @@ namespace SistemasFAC.Controllers
 
         public ActionResult Create()
         {
-            
-            ViewBag.ListaDescricao = new SelectList(gerenciadorS.ObterTodos(), "Id","nome");
+            ViewBag.ListaDescricao = new SelectList(gerenciador.ObterTodos());
             return View();
         }
         public ActionResult Details(int? id)
         {
             if (id.HasValue)
             {
-                TipoEvento tipoEvento = gerenciador.Obter(id);
-                if (tipoEvento != null)
-                    return View(tipoEvento);
+                Empresa empresa = gerenciador.Obter(id);
+                if (empresa != null)
+                    return View(empresa);
             }
             return RedirectToAction("Index");
         }
         [HttpPost]
-        public ActionResult Create(TipoEvento tipoevento)
+        public ActionResult Create(Empresa empresa)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    gerenciador.Adicionar(tipoevento);
+                    gerenciador.Adicionar(empresa);
                     return RedirectToAction("Index");
                 }
             }
@@ -70,24 +63,23 @@ namespace SistemasFAC.Controllers
 
             if (id.HasValue)
             {
-                TipoEvento tipoEvento = gerenciador.Obter(id);
-                return View(tipoEvento);
+                Empresa empresa = gerenciador.Obter(id);
+                return View(empresa);
             }
             return RedirectToAction("Index");
 
         }
         // POST: Usuario/Edit/5
         [HttpPost]
-        public ActionResult Edit(TipoEvento tipoEvento) //FormCollection collection)
+        public ActionResult Edit(Empresa empresa) //FormCollection collection)
         {
             try
             {
 
                 if (ModelState.IsValid)
                 {
-                    //Usuario usuario = new Usuario();
-                    //TryUpdateModel<Usuario>(usuario, collection.ToValueProvider());
-                    gerenciador.Editar(tipoEvento);
+                    
+                    gerenciador.Editar(empresa);
                     return RedirectToAction("Index");
                 }
 
@@ -104,25 +96,25 @@ namespace SistemasFAC.Controllers
         {
             if (id.HasValue)
             {
-                TipoEvento tipoEvento = gerenciador.Obter(id);
-                if (tipoEvento != null)
-                    return View(tipoEvento);
+                Empresa empresa = gerenciador.Obter(id);
+                if (empresa != null)
+                    return View(empresa);
             }
             return RedirectToAction("Index");
         }
 
         // POST: TipoServico/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, TipoEvento tipoEvento)
+        public ActionResult Delete(int id, Empresa empresa)
         {
             try
             {
-                gerenciador.Remover(tipoEvento);
+                gerenciador.Remover(empresa);
                 return RedirectToAction("Index");
             }
             catch
             {
-                return RedirectToAction("TipoEvento");
+                return RedirectToAction("Empresa");
             }
 
         }

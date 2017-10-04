@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Model.Models.Account;
-using Model.Models;
+﻿using Model.Models;
 using Negocio.Business;
 using SistemaFac.Util;
 using System.Web.Security;
-
 namespace SistemaFac.Controllers
 {
     public class UsuarioController : Controller
@@ -20,117 +13,112 @@ namespace SistemaFac.Controllers
             gerenciador = new GerenciadorUsuario();
         }
 
-        public ActionResult Login ()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Login(LoginModel dadosLogin)
-        {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    
-                    // Obtendo o usuário.
-                   // dadosLogin.Senha = Criptografia.GerarHashSenha(dadosLogin.Login + dadosLogin.Senha);
-                     Usuario usuario = gerenciador.ObterByLoginSenha(dadosLogin.Login, dadosLogin.Senha);
-
-                    // Autenticando.
-                    if (usuario != null)
-                    {
-                        FormsAuthentication.SetAuthCookie(usuario.Login, dadosLogin.LembrarMe);
-                        SessionHelper.Set(SessionKeys.USUARIO, usuario);
-
-                        if (usuario.TipoUsuario == (int)Util.TipoUsuario.USUARIO) 
-                            return RedirectToAction("IndexUsuario");
-                        else if (usuario.TipoUsuario == (int)Util.TipoUsuario.ADMINISTRADOR)
-                            return RedirectToAction("IndexADMINISTRADOR");
-                        else if (usuario.TipoUsuario == (int)Util.TipoUsuario.EMPRESA)
-                            return RedirectToAction("IndexEMPRESA");
-                        else
-                            return RedirectToAction(" Index ", " Administrador ");
-                    }
-                }
-                ModelState.AddModelError("", "Usuário e/ou senha inválidos.");
-            }
-            catch
-            {
-                ModelState.AddModelError("", "A autenticação falhou. Forneça informações válidas e tente novamente.");
-            }
-            // Se ocorrer algum erro, reexibe o formulário.
-            return View();
-        }
-        [Authenticated]
-        public ActionResult Logout()
-        {
-            if (User.Identity.IsAuthenticated)
-            {
-                FormsAuthentication.SignOut();
-                Session.Abandon();
-            }
-            return RedirectToAction("Index", "Home");
-        }
-
-        [Authenticated]
-        [CustomAuthorize(NivelAcesso = Util.TipoUsuario.USUARIO, MetodoAcao = "IndexADMINISTRADOR", Controladora = "Usuario")]
-        public ActionResult IndexUsuario()
-        {
-            return View();
-        }
-
-        [Authenticated]
-        [CustomAuthorize(NivelAcesso = Util.TipoUsuario.ADMINISTRADOR, MetodoAcao = "IndexEMPRESA", Controladora = "Usuario")]
-        public ActionResult IndexADMINISTRADOR()
-        {
-            return View();
-        }
-        [Authenticated]
-        [CustomAuthorize(NivelAcesso = Util.TipoUsuario.EMPRESA, MetodoAcao = "IndexADMINISTRADOR", Controladora = "Usuario")]
-        public ActionResult IndexEMPRESA()
-        {
-            return View();
-        }
-
-        public ActionResult Cadastrar()
-        {
-            ViewBag.TipoUsuario = new SelectList(gerenciador.ObterTodos(), "Id", "Descricao");
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Cadastrar(FormCollection collection)
-        {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    collection["Senha"] = Criptografia.GerarHashSenha(collection["Login"] + collection["Senha"]);
-                    Usuario usuario = new Usuario();
-                    TryUpdateModel<Usuario>(usuario, collection.ToValueProvider());
-                    if (gerenciador.BuscarPreCadastro(usuario.Id,usuario.Email))
-                    {
-                        Usuario auxiliar = usuario;
-                        auxiliar.Id = gerenciador.Obter(usuario.Id).Id;
-                        gerenciador.Editar(auxiliar);
-                    }
-                   // gerenciador.Adicionar(usuario);
-                    return RedirectToAction("Login");
-                }
-                return View();
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         public ActionResult Index()
         {
             return View(gerenciador.ObterTodos());
+        }
+
+        public ActionResult Details(int? id)
+        {
+            if (id.HasValue)
+            {
+                Usuario usuario = gerenciador.Obter(id);
+                if (usuario != null)
+                    return View(usuario);
+            }
+            return RedirectToAction("Index");
+        }
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create([Bind(Exclude ="Id,NvAcesso")]Usuario usuario)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+
+                    usuario.Senha = Criptografia.GerarHashSenha(usuario.Login + usuario.Senha);
+                    usuario.NvAcesso = 1;
+                    gerenciador.Adicionar(usuario);
+                    return RedirectToAction("Index");
+
+                    return RedirectToAction("Index");
+
+                }
+            }
+            catch
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+
+        // GET: Usuario/Edit/5
+        public ActionResult Edit(int? id)
+        {
+
+            if (id.HasValue)
+            {
+                Usuario usuario = gerenciador.Obter(id);
+                return View(usuario);
+            }
+            return RedirectToAction("Index");
+
+        }
+
+        // POST: Usuario/Edit/5
+        [HttpPost]
+        public ActionResult Edit(Usuario usuario) //FormCollection collection)
+        {
+            try
+            {
+
+                if (ModelState.IsValid)
+                {
+                    //Usuario usuario = new Usuario();
+                    //TryUpdateModel<Usuario>(usuario, collection.ToValueProvider());
+                    gerenciador.Editar(usuario);
+                    return RedirectToAction("Index");
+                }
+
+            }
+            catch
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+
+        // GET: Usuario/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            if (id.HasValue)
+            {
+                Usuario usuario = gerenciador.Obter(id);
+                if (usuario != null)
+                    return View(usuario);
+            }
+            return RedirectToAction("Index");
+        }
+
+        // POST: Usuario/Delete/5
+        [HttpPost]
+        public ActionResult Delete(int id, Usuario usuario)
+        {
+            try
+            {
+                gerenciador.Remover(usuario);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return RedirectToAction("Usuario");
+            }
+
         }
     }
 }
