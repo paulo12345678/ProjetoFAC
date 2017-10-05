@@ -9,7 +9,6 @@ namespace Model.Models
 {
     public class Convite
     {
-
         private bool confirmado;
         private string endereco;
         private List<Destinatario> destinatarios;
