@@ -9,7 +9,7 @@ using Negocio.Business;
 using Model.Models.Account;
 using System.Web.Security;
 
-namespace SistemaFac.Controllers
+namespace BibliotecaWeb.Controllers
 {
     public class HomeController : Controller
     {
@@ -27,14 +27,13 @@ namespace SistemaFac.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "APLICATIVO WEB DE CATALOGO DE SERVIÇOS.";
-
+            ViewBag.Message = "Your application description page.";
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "esodegemeos@gmail.com";
+            ViewBag.Message = "Your contact page.";
 
             return View();
         }

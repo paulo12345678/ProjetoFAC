@@ -44,7 +44,6 @@ namespace SistemaFac.Util
             Usuario usuario = SessionHelper.Get(SessionKeys.USUARIO) as Usuario;
             if (usuario == null)
                 return false;
-            if (httpContext.Request.IsAuthenticated && (usuario.NvAcesso == ((int)NivelAcesso + 1) || AllowAccess))
                 return true;
             else
                 return false;

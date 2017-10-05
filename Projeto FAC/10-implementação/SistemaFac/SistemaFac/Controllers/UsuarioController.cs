@@ -1,7 +1,7 @@
 ﻿using Model.Models;
 using Negocio.Business;
-using System.Web.Mvc;
 using SistemaFac.Util;
+using System.Web.Security;
 namespace SistemaFac.Controllers
 {
     public class UsuarioController : Controller
@@ -40,10 +40,14 @@ namespace SistemaFac.Controllers
             {
                 if (ModelState.IsValid)
                 {
+
                     usuario.Senha = Criptografia.GerarHashSenha(usuario.Login + usuario.Senha);
                     usuario.NvAcesso = 1;
                     gerenciador.Adicionar(usuario);
                     return RedirectToAction("Index");
+
+                    return RedirectToAction("Index");
+
                 }
             }
             catch

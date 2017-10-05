@@ -7,11 +7,11 @@ using Model.Models;
 
 namespace Persistencia.Persistence
 {
-    class repositorioEmpresa
+    public class RepositorioEmpresa
     {
         private static List<Empresa> ListaEmpresa;
 
-        static repositorioEmpresa()
+        static RepositorioEmpresa()
         {
             ListaEmpresa = new List<Empresa>();
         }
@@ -35,12 +35,12 @@ namespace Persistencia.Persistence
             ListaEmpresa.RemoveAt(posicao);
         }
 
-        public Empresa obter(Func<Empresa , bool> where)
+        public Empresa Obter(Func<Empresa , bool> where)
         {
             return ListaEmpresa.Where(where).FirstOrDefault();
         }
 
-        public List<Empresa> Obtertodas()
+        public List<Empresa> ObterTodos()
         {
             return ListaEmpresa;
         }
