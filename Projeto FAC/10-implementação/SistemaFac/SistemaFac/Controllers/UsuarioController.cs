@@ -1,6 +1,7 @@
 ﻿using Model.Models;
 using Negocio.Business;
 using SistemaFac.Util;
+using System.Web.Mvc;
 using System.Web.Security;
 namespace SistemaFac.Controllers
 {
@@ -44,8 +45,6 @@ namespace SistemaFac.Controllers
                     usuario.Senha = Criptografia.GerarHashSenha(usuario.Login + usuario.Senha);
                     usuario.NvAcesso = 1;
                     gerenciador.Adicionar(usuario);
-                    return RedirectToAction("Index");
-
                     return RedirectToAction("Index");
 
                 }

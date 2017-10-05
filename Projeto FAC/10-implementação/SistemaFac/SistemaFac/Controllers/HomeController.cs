@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Model.Models;
 using SistemaFac.Util;
 using Negocio.Business;
 using Model.Models.Account;
 using System.Web.Security;
+using System.Collections.Generic;
 
 namespace BibliotecaWeb.Controllers
 {
@@ -64,11 +61,11 @@ namespace BibliotecaWeb.Controllers
                         FormsAuthentication.SetAuthCookie(usuario.Login, dadosLogin.LembrarMe);
                         SessionHelper.Set(SessionKeys.USUARIO, usuario);
 
-                        if (usuario.NvAcesso == (int)Util.TipoUsuario.USUARIO + 1)
+                        if (usuario.NvAcesso == (int)TipoUsuario.USUARIO + 1)
                             return RedirectToAction("Index", "TipoEvento");
-                        else if (usuario.NvAcesso == (int)Util.TipoUsuario.ADMINISTRADOR + 1)
+                        else if (usuario.NvAcesso == (int)TipoUsuario.ADMINISTRADOR + 1)
                             return RedirectToAction("IndexADMINISTRADOR");
-                        else if (usuario.NvAcesso == (int)Util.TipoUsuario.EMPRESA + 1)
+                        else if (usuario.NvAcesso == (int)TipoUsuario.EMPRESA + 1)
                             return RedirectToAction("IndexEMPRESA");
                         else
                             return RedirectToAction(" Index ", " Administrador ");
@@ -84,5 +81,14 @@ namespace BibliotecaWeb.Controllers
             // Se ocorrer algum erro, reexibe o formulário.
             return View();
         }
+
+        public ActionResult List(Servico servico)
+        {
+             var lst = new List<Servico> { };
+             ViewBag.servico = new SelectList(lst);
+
+            return View();
+        }
+
     }
 }
