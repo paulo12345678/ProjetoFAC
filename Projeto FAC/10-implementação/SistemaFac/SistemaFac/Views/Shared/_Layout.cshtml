@@ -18,22 +18,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Sistema FAC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Sistema FAC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })               
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Aniversario", "Index", "Servico")</li>
-                    <li>@Html.ActionLink("Casamento", "Index", "Servico")</li>
-                    <li>@Html.ActionLink("Formatura", "Index", "Servico")</li>
-                   <!-- <li>@Html.ActionLink("Início", "Index", "Home")</li>-->
-                   
-                  
-                </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Sobre", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
-                    <li><a href="http://localhost:50542/Usuario/Create"><span class="glyphicon glyphicon-user"></span> Inscrever-se</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+                    <li><a href="http://localhost:50542/Usuario/Create"><span class="glyphicon glyphicon-user"></span> @Html.ActionLink("Inscrever-se", "Create", "Usuario")</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> @Html.ActionLink("Entrar","Login","Home")</a></li>
                 </ul>
             </div>
         </div>

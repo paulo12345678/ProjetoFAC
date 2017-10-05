@@ -64,11 +64,11 @@ namespace BibliotecaWeb.Controllers
                         FormsAuthentication.SetAuthCookie(usuario.Login, dadosLogin.LembrarMe);
                         SessionHelper.Set(SessionKeys.USUARIO, usuario);
 
-                        if (usuario.NvAcesso == (int)Util.TipoUsuario.USUARIO + 1)
+                        if (usuario.NvAcesso == (int)SistemaFac.Util.TipoUsuario.USUARIO + 1)
                             return RedirectToAction("Index", "TipoEvento");
-                        else if (usuario.NvAcesso == (int)Util.TipoUsuario.ADMINISTRADOR + 1)
+                        else if (usuario.NvAcesso == (int)SistemaFac.Util.TipoUsuario.ADMINISTRADOR + 1)
                             return RedirectToAction("IndexADMINISTRADOR");
-                        else if (usuario.NvAcesso == (int)Util.TipoUsuario.EMPRESA + 1)
+                        else if (usuario.NvAcesso == (int)SistemaFac.Util.TipoUsuario.EMPRESA + 1)
                             return RedirectToAction("IndexEMPRESA");
                         else
                             return RedirectToAction(" Index ", " Administrador ");
