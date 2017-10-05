@@ -221,8 +221,17 @@
     <Content Include="Views\Usuario\Login.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_LayoutEmpresa.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\TipoEvento\Create.cshtml" />
+=======
+    <Content Include="Views\Shared\_LayoutAdministrador .cshtml" />
+    <Content Include="Views\Shared\_Layout - Cópia .cshtml" />
+    <Content Include="Views\Empresa\Index.cshtml" />
+    <Content Include="Views\Empresa\Create.cshtml" />
+    <Content Include="Views\Empresa\Edit.cshtml" />
+    <Content Include="Views\Empresa\Delete.cshtml" />
+>>>>>>> e65452ac5ef5f5ff7bfa0dc44c47ad8ed165b1bf
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
