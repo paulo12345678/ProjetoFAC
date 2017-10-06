@@ -32,8 +32,8 @@ namespace SistemasFAC.Controllers
 
         public ActionResult Create()
         {
-            
-            ViewBag.ListaDescricao = new SelectList(gerenciadorS.ObterTodos(), "Id","Nome");
+             
+            ViewBag.ListaDescricao = new SelectList(gerenciadorS.ObterTodos(), selectedValue: "Id");
             return View();
         }
         public ActionResult Details(int? id)
